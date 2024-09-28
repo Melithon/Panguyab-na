@@ -1,0 +1,105 @@
+/* Body styles with a gradient background */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Centering container */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Main header styling */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#f06, #4a90e2); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling the button container */
+.buttons {
+    margin-top: 30px;
+}
+
+/* General button styling */
+button, #backBtn {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+/* Yes Button: Gradient and hover effects */
+#yesBtn {
+    background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+    color: white;
+}
+
+#yesBtn:hover {
+    background: linear-gradient(135deg, #4e9e25 0%, #91c757 100%);
+    box-shadow: 0 10px 25px rgba(0, 128, 0, 0.4);
+    transform: scale(1.05); /* Grows slightly when hovered */
+}
+
+/* No Button: Gradient and hover effects */
+#noBtn {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+    color: white;
+}
+
+#noBtn:hover {
+    background: linear-gradient(135deg, #e63756 0%, #e13d26 100%);
+    box-shadow: 0 10px 25px rgba(255, 69, 0, 0.4);
+    transform: scale(1.05); /* Grows slightly when hovered */
+}
+
+/* Response message styling */
+#response {
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* Hide the response text until triggered */
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
